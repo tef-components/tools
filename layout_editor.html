@@ -10,12 +10,34 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
   <body>
-    <div class="tef-wrapper tef-content">
-      <header>
-        <h1>Layout Editor</h1>
+    <div class="tef-wrapper">
+      <header class="tef-header">
+        <nav>
+<!--
+          <button id="show-menu-btn" onclick="showMenu()" class="tef-menu" icon="menu"></button>
+          <button id="hide-menu-btn" onclick="hideMenu()" class="tef-close" icon="close"></button>
+          <ul id="menu" onclick="hideMenu()">
+            <li><span>Hello George!</span><i icon="user"></i></li>
+            <li><a href=""><span>Help</span><i icon="help_circle"></i></a></li>
+            <li><a href=""><span>Exit</span><i icon="close_circle"></i></a></li>
+          </ul>
+-->
+        </nav>
+        <h1><a href="/">Layout editor</a></h1>
       </header>
 
-      <section>
+      <nav id="toolbar" class="tef-toolbar">
+        <ul class="right">
+          <li class="tef-tooltip bottom reverse" data-text="Add nested columns">
+            <a id="add-nested-columns" href="#"><i icon="plus"></i></a>
+          </li>
+          <li class="tef-tooltip bottom reverse" data-text="Remove this column">
+            <a id="remove-column" href="#"><i icon="close"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="tef-content">
         <div id="main-grid"></div>
       </section>
 
@@ -25,7 +47,7 @@
           <p>Please select the structure of your main container.</p>
           <br>
           <label>Number of columns</label>
-          <div class="tef-dropdown" data-icon="angle_down">
+          <div class="tef-dropdown" icon="angle_down">
             <select id="add-columns-number">
               <option value="1">1</option>
               <option value="2">2</option>

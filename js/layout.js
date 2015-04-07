@@ -15,11 +15,18 @@ $(function() {
 
     // build columns
     for (var i = 0; i < cols ; ++ i) {
-      var itemID = 'column-'+ (i+1);
-      $('#main-grid').append('<div id="'+ itemID +'"><span>Column '+ (i+1) +'</span> <button id="add-'+ itemID +'" class="tef-button small subdued"><i data-icon="plus"></i></button><button id="remove-'+ itemID +'" class="tef-button small subdued"><i data-icon="minus"></i></button></div>');
+      $('#main-grid').append('<div id=column-'+ (i+1) +'"><span>Column '+ (i+1) +'</span> </div>');
     }
   });
 
-
+  // Select columns
+  $('#main-grid').click(function(e) {
+    $('#main-grid *').removeClass('active');
+    if ($(e.target).attr('id')) {
+      $(e.target).addClass('active');
+    } else {
+      $(e.target).closest('[id]').addClass('active');
+    }
+  });
 });
 
