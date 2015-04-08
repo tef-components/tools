@@ -8,7 +8,7 @@ $(function() {
     $('#add-columns-modal').removeClass('show');
 
     var cols = $('#add-columns-number').val();
-    $('#main-grid').attr('data-columns', cols);
+    $('#main-grid').attr('columns', cols);
     if ($('input[name=add-columns-gutter]:checked').val() === 'yes') {
       $('#main-grid').addClass('tef-gutter');
     }
@@ -29,4 +29,3 @@ $(function() {
     }
   });
 });
-

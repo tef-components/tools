@@ -1,4 +1,4 @@
-# TEF tool
+# TEF tools
 
 Set of tools to help you develop your components.
 

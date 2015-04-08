@@ -2,7 +2,7 @@
   background: #007486;
 }
 
-[data-columns] > * {
+[columns] > * {
   text-align: center;
   background: rgba(0,0,0,0.1);
   border: 1px solid #fff;
@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-[data-columns] > .active {
+[columns] > .active {
   border: 1px solid #007486;
 }
 
