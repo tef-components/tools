@@ -11,10 +11,17 @@
   cursor: pointer;
 }
 
+[columns].active,
 [columns] > .active {
-  border: 1px solid #007486;
+  border-color: #007486;
 }
 
 span + .tef-button.small {
   margin-left: 10px;
+}
+
+[columns] {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #eee;
 }

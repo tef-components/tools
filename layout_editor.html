@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../theme_telefonica/css/components.telefonica.css">
     <link rel="stylesheet" href="css/layout.css">
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
   </head>
   <body>
     <div class="tef-wrapper">
@@ -28,17 +28,16 @@
 
       <nav id="toolbar" class="tef-toolbar">
         <ul class="right">
-          <li class="tef-tooltip bottom reverse" data-text="Add nested columns">
-            <a id="add-nested-columns" href="#"><i icon="plus"></i></a>
+          <li class="tef-tooltip bottom reverse" tooltip="Add columns">
+            <a id="add-nested-columns" disabled href="#"><i icon="plus"></i></a>
           </li>
-          <li class="tef-tooltip bottom reverse" data-text="Remove this column">
-            <a id="remove-column" href="#"><i icon="close"></i></a>
+          <li class="tef-tooltip bottom reverse" tooltip="Remove">
+            <a id="remove-column" disabled href="#"><i icon="close"></i></a>
           </li>
         </ul>
       </nav>
 
-      <section class="tef-content">
-        <div id="main-grid"></div>
+      <section id="main-content" class="tef-content">
       </section>
 
        <div id="add-columns-modal" class="tef-modal">
