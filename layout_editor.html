@@ -10,44 +10,44 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div class="tef-wrapper">
-      <header class="tef-header">
+    <div class="tc-wrapper">
+      <header class="tc-header">
         <nav>
 <!--
-          <button id="show-menu-btn" onclick="showMenu()" class="tef-menu" icon="menu"></button>
-          <button id="hide-menu-btn" onclick="hideMenu()" class="tef-close" icon="close"></button>
+          <button id="show-menu-btn" onclick="showMenu()" class="tc-menu" data-icon="menu"></button>
+          <button id="hide-menu-btn" onclick="hideMenu()" class="tc-close" data-icon="close"></button>
           <ul id="menu" onclick="hideMenu()">
-            <li><span>Hello George!</span><i icon="user"></i></li>
-            <li><a href=""><span>Help</span><i icon="help_circle"></i></a></li>
-            <li><a href=""><span>Exit</span><i icon="close_circle"></i></a></li>
+            <li><span>Hello George!</span><i data-icon="user"></i></li>
+            <li><a href=""><span>Help</span><i data-icon="help_circle"></i></a></li>
+            <li><a href=""><span>Exit</span><i data-icon="close_circle"></i></a></li>
           </ul>
 -->
         </nav>
         <h1><a href="/">Layout editor</a></h1>
       </header>
 
-      <nav id="toolbar" class="tef-toolbar">
+      <nav id="toolbar" class="tc-toolbar">
         <ul class="right">
-          <li class="tef-tooltip bottom reverse" tooltip="Add columns">
-            <a id="add-nested-columns" disabled href="#"><i icon="plus"></i></a>
+          <li class="tc-tooltip bottom reverse" tooltip="Add data-columns">
+            <a id="add-nested-data-columns" disabled href="#"><i data-icon="plus"></i></a>
           </li>
-          <li class="tef-tooltip bottom reverse" tooltip="Remove">
-            <a id="remove-column" disabled href="#"><i icon="close"></i></a>
+          <li class="tc-tooltip bottom reverse" tooltip="Remove">
+            <a id="remove-data-column" disabled href="#"><i data-icon="close"></i></a>
           </li>
         </ul>
       </nav>
 
-      <section id="main-content" class="tef-content">
+      <section id="main-content" class="tc-content">
       </section>
 
-       <div id="add-columns-modal" class="tef-modal">
-        <div class="tef-dialog">
+       <div id="add-data-columns-modal" class="tc-modal">
+        <div class="tc-dialog">
           <header>Layout Editor</header>
           <p>Please select the structure of your main container.</p>
           <br>
-          <label>Number of columns</label>
-          <div class="tef-dropdown" icon="angle_down">
-            <select id="add-columns-number">
+          <label>Number of data-columns</label>
+          <div class="tc-dropdown" data-icon="down">
+            <select id="add-data-columns-number">
               <option value="1">1</option>
               <option value="2">2</option>
               <option selected value="3">3</option>
@@ -63,18 +63,18 @@
             </select>
           </div>
           <br><br>
-          <label>Will your columns have gutter?</label>
-          <label class="tef-radio">
-            <input type="radio" name="add-columns-gutter" value="yes">
+          <label>Will your data-columns have gutter?</label>
+          <label class="tc-radio">
+            <input type="radio" name="add-data-columns-gutter" value="yes">
             <span>Yes</span>
           </label>
-          <label class="tef-radio">
-            <input type="radio" name="add-columns-gutter" value="no" checked>
+          <label class="tc-radio">
+            <input type="radio" name="add-data-columns-gutter" value="no" checked>
             <span>No</span>
           </label>
 
           <footer>
-            <button class="tef-button" id="add-columns-btn">Ok</button>
+            <button class="tc-button" id="add-data-columns-btn">Ok</button>
           </footer>
         </div>
       </div>

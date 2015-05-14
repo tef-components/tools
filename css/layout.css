@@ -1,8 +1,8 @@
-.tef-header {
+.tc-header {
   background: #007486;
 }
 
-[columns] > * {
+[data-columns] > * {
   text-align: center;
   background: rgba(0,0,0,0.1);
   border: 1px solid #fff;
@@ -11,16 +11,16 @@
   cursor: pointer;
 }
 
-[columns].active,
-[columns] > .active {
+[data-columns].active,
+[data-columns] > .active {
   border-color: #007486;
 }
 
-span + .tef-button.small {
+span + .tc-button.small {
   margin-left: 10px;
 }
 
-[columns] {
+[data-columns] {
   margin-top: 5px;
   padding: 10px;
   border: 1px solid #eee;
