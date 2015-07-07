@@ -33,7 +33,7 @@
     <div class="tc-wrapper tc-content">
       <header data-columns="2 xs1">
         <h1>Templates</h1>
-        <div>
+        <div class="tc-right">
           <label>Change theme</label>
           <div class="tc-dropdown" data-icon="down">
             <select id="themeSelector">
@@ -62,6 +62,7 @@
       </header>
 
       <h2>Dialogs</h2>
+      <h3>Default</h3>
       <div class="tc-dialog">
         <header>Download started...</header>
         <p>Downloading document. You will find it in your Downloads folder.</p>
@@ -70,16 +71,42 @@
           <button class="tc-button positive">Accept</button>
         </footer>
       </div>
+
+      <h3>With close button</h3>
       <div class="tc-dialog">
         <header>
           Download started...
-          <button class="tc-close" data-icon="close"></button>
+          <button class="tc-button">
+            <i data-icon="close"></i>
+          </button>
         </header>
         <p>Downloading document. You will find it in your Downloads folder.</p>
         <footer>
           <button class="tc-button positive">Accept</button>
         </footer>
       </div>
+
+      <h3>Login dialog</h3>
+      <div class="tc-dialog">
+        <header>Log in</header>
+        <p>Please, log in to start using this service.</p>
+        <div class="tc-row">
+          <label>Email</label>
+          <input type="email" class="tc-input block" id="user"/>
+        </div>
+        <div class="tc-row">
+          <label>Password</label>
+          <input type="password" class="tc-input block" id="password"/>
+        </div>
+        <div class="tc-row">
+          <p><a class="tc-link" href="#">Forgot my password</a></p>
+        </div>
+        <footer>
+          <button class="tc-button">Login</button>
+          <p>First time users please <a class="tc-link" href="register">register</a></p>
+        </footer>
+      </div>
+
 
       <h2>Sidebars</h2>
       <div data-columns="3">
